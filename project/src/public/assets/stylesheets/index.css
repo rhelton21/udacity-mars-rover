@@ -1,0 +1,115 @@
+/* -------------------  MOBILE  --------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  min-height: 100vh;
+  letter-spacing: 1.5px;
+  background-color: lightsteelblue;
+}
+
+header {
+  /* header styles */
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  /* footer styles */
+}
+
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2em 0;
+}
+
+.menu-item {
+  list-style-type: none;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  background-color: darkgray;
+}
+
+.menu-item:hover {
+  background-color: #3e7fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: white;
+}
+
+.apod-title {
+  padding: 10px 0;
+}
+
+.apod-explain {
+  text-indent: 4em;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.5em;
+  padding: 15px;
+}
+
+.rover-data {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.rover-data .rover-name {
+  font-size: xx-large;
+}
+
+.image-data {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.image-list {
+  margin: 3em 0;
+  padding: 2em;
+  height: 100%;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.image-list .image-info img {
+  width: 100%;
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (min-width: 768px) {
+  /* use mobile */
+  .image-list {
+    width: 30%;
+  }
+  .menu-item {
+    width: 25%;
+  }
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+  /* use mobile */
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+  /* use mobile */
+  .image-list {
+    width: 18%;
+  }
+}
